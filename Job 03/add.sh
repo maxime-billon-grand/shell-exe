@@ -1,3 +1,3 @@
 #!/bin/bash
-resultat=$(($1 + $2))
-echo $resultat
+somme=$(($1 + $2))
+echo "Le résultat est : " $somme
