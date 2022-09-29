@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /home/max/shell.exe/"Job 09"
 
 # Boucle qui va décomposer chaque ligne du fichier et mettre dans une variable $array {ID Prénom Nom Mdp Role}
 # Par exemple ${array[0]} correspondra à l'ID
@@ -10,7 +11,7 @@ do
 
 # Si l'utilisateur n'existe pas
         if ! id -u "${array[1],,}" >/dev/null 2>&1; then
-            echo "USER DOESNT EXISTS" ${array[1],,} ${array[2]}
+            echo "USER DOESN'T EXISTS" ${array[1],,} ${array[2]}
 
 # Créer l'utilisateur
             sudo adduser ${array[1],,} --gecos "${array[1]} ${array[2]},,," --disabled-password
@@ -21,7 +22,7 @@ do
                 echo ${array[1]} "IS AN ADMIN ->" ${array[4]}
                 sudo adduser ${array[1],,} sudo
             else
-                echo ${array[1]} "ISNT ADMIN ->" ${array[4]}
+                echo ${array[1]} "ISN'T ADMIN ->" ${array[4]}
 
             fi
 
