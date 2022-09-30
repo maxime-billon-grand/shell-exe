@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#curl --user maxime.billon-grand@laplateforme.io:N28m9y6z https://alcasar.laplateforme.io/intercept.php -v
+#curl --user maxime.billon-grand@laplateforme.io:XXXXX https://alcasar.laplateforme.io/intercept.php -v
 
 # --> Sur Firefox, on trouve que c'est cette URL qui est envoyée dés que l'on lance la connexion:
 # https://alcasar.laplateforme.io:3991/logon?username=maxime.billon-grand@laplateforme.io&password=555c9a4d31620334&userurl=http://www.euronews.com/
