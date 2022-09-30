@@ -22,7 +22,7 @@ do
                 echo ${ligne[1]} "IS AN ADMIN ->" ${ligne[4]}
                 sudo adduser ${ligne[1],,} sudo
             else
-                echo ${ligne[1]} "ISN'T ADMIN ->" ${ligne[4]}
+                echo ${ligne[1]} "IS NOT ADMIN ->" ${ligne[4]}
 
             fi
 
